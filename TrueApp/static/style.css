@@ -1,0 +1,196 @@
+:root{
+    /*Primary colors*/
+    --levanderWeb: #E5EAFA;
+    --wintergreenDream: #5B8E7D;
+    --darkJungle: #172121;
+    /*Accent colors*/
+    --persianPlum: #6B0F1A;
+    --honeyYellow: #F6AE2D;
+}
+
+body{
+    color: var(--darkJungle);
+    background-color: var(--darkJungle);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, main {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/*Menu style*/
+.topnav {
+    margin-top: -20px;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    background-color: var(--wintergreenDream);
+}
+.topnav a {
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    text-decoration: none;
+}
+.navlink {
+    background-color: var(--levanderWeb);
+    color: var(--darkJungle);
+    font-size: 1.8rem;
+    margin-right: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+}
+/*end of manu css------------------------------*/
+
+/*Main container css*/
+.container {
+    /*background-color: gainsboro;*/
+    width: 55rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+/* end fo container css---------------------------*/
+h1, h2, h3 {
+    color: var(--levanderWeb) !important;
+    text-align: center;
+}
+h1 {
+    font-size: 3rem !important;
+    color: var(--levanderWeb); 
+}
+label {
+    color: var(--levanderWeb);
+}
+
+
+/* Note index table css*/
+.noteindex {
+    background-color: var(--levanderWeb);
+    color: var(--darkJungle);
+    border-radius: 0.2rem;
+    font-size: 1.5rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/*End of �noteindex table css--------------------*/
+
+/*Table css*/
+table {
+    background-color: var(--levanderWeb) !important;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+tr {
+    
+}
+/*End of table css --------------------------------*/
+
+
+/*Form css*/
+form {
+    /*background-color: lightgray;*/
+    font-size: 1.5rem;
+    max-width: 100%;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+form p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.2rem;
+}
+.selectSearch {
+    background-color: var(--levanderWeb);
+    color: var(--darkJungle);
+}
+select {
+    background-color: var(--levanderWeb);
+    width: 69%;
+    background-color: var(--levanderWeb) !important;
+    color: var(--darkJungle) !important;
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.2rem !important;
+}
+.submit {
+    margin-top: 0.2rem;
+    background-color: var(--wintergreenDream);
+    color: var(--darkJungle);
+    margin-top: 0.2rem;
+    border-style: none;
+    border-radius: 0.4rem;
+    width: 30% !important;
+    height: 2rem;
+}
+.search {
+    background-color: var(--wintergreenDream);
+    color: var(--darkJungle);
+    border-style: none;
+    border-radius: 0.4rem;
+    width: 30%;
+    height: 2rem;
+}
+
+/* End of form css -----------------------------------------------*/
+
+
+/*Note css*/
+.note{
+    background-color: var(--levanderWeb);
+    margin-left: auto;
+    font-size: 1.4rem;
+    margin-right: auto;
+    max-width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+}
+.note p{
+    margin-top: 0.2rem;
+}
+.note div{
+    font-size: 1rem;
+}
+textarea {
+    margin-bottom: 0.2rem !important;
+    border-radius: 8px;
+    background-color: var(--levanderWeb) !important;
+    height: 8rem;
+    width: 100%;
+}
+.noteEdit textarea {
+    background-color: var(--levanderWeb);
+    height: 20rem;
+    background-color: var(--levanderWeb) !important;
+    color: var(--darkJungle) !important;
+}
+/* end of note css -------------------------------------------------*/
+
+
+/* Javascript classes */
+[data-href] {
+    cursor: pointer;
+}
+[data-href]:hover {
+    background-color: lightgray;
+    -webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+/* Javascript hide class */
+.hide{
+	display: none;
+}
+
+

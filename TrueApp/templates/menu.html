@@ -1,0 +1,30 @@
+
+
+
+
+
+<div class="w-65 center topnav">
+    <a href="{% url 'noteapp:index' %}">
+        <div class="navlink fl">
+            Books
+        </div>
+    </a>
+    {% if user.is_authenticated %}
+    <a href="{% url 'logout' %}">
+        <div class="navlink fr">
+            Logout
+        </div>
+    </a>
+    <a href="{% url 'noteapp:settings' %}">
+        <div class="navlink fr">
+            Settings
+        </div>
+    </a>
+    {% else %}
+    <a href="{% url 'login' %}">
+        <div class="navlink fr">
+            Login
+        </div>
+    </a>
+    {% endif %}
+</div>

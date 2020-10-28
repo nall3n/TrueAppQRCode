@@ -1,0 +1,44 @@
+<!-- templates/QR/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+
+
+    <script src="{% static 'qr.js' %}"></script>
+    <meta charset="utf-8">
+    <title>QR Test</title>
+    <style>
+        main{
+        }
+        main div {
+            width: 6rem;
+            padding: 1rem;
+            background-color: white;
+            margin: 3rem;
+        }
+
+    </style>
+</head>
+<body onload="redirect()">
+    <main>
+        <div onclick="mobileType()">
+            test
+        </div>
+        <div id="status">
+            Pending
+        </div>
+
+        <div id="android">
+            {{ trueapp.android_url }}
+        </div>
+        <div id="iphone">
+            {{ trueapp.iphone_url }}
+        </div>
+
+    </main>
+</body>
+</html>
