@@ -28,17 +28,17 @@ function redirect(){
 
     else if (/android/i.test(navigator.userAgent)) {
         document.getElementById("status").innerHTML = "Android";
-
-        window.location = document.getElementById('android').innerHTML
+        window.location = document.getElementById('android').innerHTML;
     }
 
     // iOS detection from: http://stackoverflow.com/a/9039885/177710
     else if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
         document.getElementById("status").innerHTML = "iPhone";
-        window.location = document.getElementById('iphone').innerHTML
+        window.location = document.getElementById('iphone').innerHTML;
     }
 
     else {
         document.getElementById("status").innerHTML = "Datta";
+        window.location = document.getElementById('web').innerHTML;
     }
 }

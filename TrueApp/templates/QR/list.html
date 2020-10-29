@@ -1,0 +1,36 @@
+<!-- templates/QR/list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+
+    <meta charset="utf-8">
+    <title>QR Test</title>
+    <style>
+        main {
+        }
+
+            main div {
+                color: black;
+                padding: 1rem;
+                background-color: white;
+                margin: 0.2rem;
+            }
+    </style>
+</head>
+<body onload="redirect()">
+    <main>
+
+        {% for app in url_list %}
+        <div>
+            {{ app.name }}<br />
+            {{ app.url }}
+        </div>
+
+        {% endfor %}
+    </main>
+</body>
+</html>
