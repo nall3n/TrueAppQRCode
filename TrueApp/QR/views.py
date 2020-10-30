@@ -7,7 +7,6 @@ from .models import TrueApp
 
 def index(request, app_name):
 
-
     trueapp = get_object_or_404(TrueApp, app_name = app_name)
 
     context = {
@@ -15,7 +14,6 @@ def index(request, app_name):
         }
 
     return render(request, 'QR/index.html', context)
-
 
 def list (request):
 

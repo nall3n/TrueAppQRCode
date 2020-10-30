@@ -23,13 +23,11 @@
 </head>
 <body onload="redirect()">
     <main>
-
         {% for app in url_list %}
         <div>
             {{ app.name }}<br />
             {{ app.url }}
         </div>
-
         {% endfor %}
     </main>
 </body>
